@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figuras Geometricas</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .figuraP {
+        text-align: center;
+        background: rgb(43, 43, 137);
+        color: white;
+        padding: 15px 0;
+      }
+      .figuraP h1 {
+        padding: 5px 0;
+        font-size: 25px;
+      }
+      .figuraP p {
+        padding: 5px 0;
+        font-size: 13px;
+      }
+      .PrincipalH2 {
+        text-align: center;
+        padding: 15px 0;
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+      .caja {
+        border: 2px solid black;
+        display: inline-block;
+        width: 250px;
+        overflow: hidden;
+        margin: auto;
+        border-radius: 8px;
+        height: 500px;
+        text-align: center;
+        margin-right: 30px;
+      }
+      .caja h2 {
+        padding: 12px;
+        background: rgb(43, 43, 137);
+        color: white;
+        font-size: 18px;
+      }
+      .caja p {
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 6px;
+      }
+      .caja input {
+        display: inline-block;
+        margin-bottom: 10px;
+        align-items: center;
+        margin-left: 15%;
+        margin-right: 20%;
+        border: 2px solid rgb(43, 43, 137);
+        padding: 5px;
+        border-radius: 6px;
+      }
+
+      .caja button {
+        background: rgb(43, 43, 137);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        align-items: center;
+        margin: auto;
+        margin-top: 7px;
+        display: inline-block;
+      }
+
+      .cajaT {
+        margin-left: 330px;
+        overflow: hidden;
+      }
+
+      #btn-area {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 5px;
+      }
+
+      #btn-diametro {
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-bottom: 6px;
+      }
+
+      #btn-perimetro {
+        margin-left: 0px;
+        margin-bottom: 6px;
+      }
+
+      .caja button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+
+      /* WEB RESPONSIVE */
+      @media screen and (max-width: 1191px) {
+        /*.caja {
+          width: 100%;
+        }*/
+      }
+      /* PARA MI CELULAR ES DE DE 800 * 364 MASOMENOS */
+      @media screen and (max-width: 800px) {
+        .cajaT {
+          margin: 30px;
+          margin-left: 120px;
+        }
+        .caja {
+          width: 26%;
+        }
+        .caja input {
+          margin: 0;
+          margin-bottom: 4px;
+          width: 80%;
+        }
+      }
+
+      @media screen and (max-width: 364px) {
+        .caja {
+          width: 90%;
+          margin-left: 20px;
+          margin-bottom: 2em;
+          height: auto;
+        }
+        .cajaT {
+          margin: 0px;
+        }
+        #btn-area {
+          margin-bottom: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="figuraP">
+        <h1>FIGURAS GEOMETRICAS</h1>
+        <p>
+          Calcular diferentes medidas de figuras Geométricas como área y
+          perímetro
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="PrincipalH2">El área de Cuadrado es: 45cm</h2>
+      </section>
+      <section class="cajaT">
+        <div class="caja">
+          <h2>Cuadrado</h2>
+          <p>¿Cuanto mide cada lado de tu cuadrado?</p>
+          <input
+            type="number"
+            name="ladoCu"
+            id="ladoCu"
+            placeholder="Ingrese lados"
+          />
+          <button type="button" id="btn-perimetro">Perimetro</button>
+          <button type="button" id="btn-area">Area</button>
+        </div>
+
+        <div class="caja">
+          <h2>Triangulo</h2>
+          <p>¿Cuanto mide cada lado de tu Triangulo?</p>
+          <input
+            type="number"
+            name="ladoTr1"
+            id="ladoTr1"
+            placeholder="Ingrese lado 01"
+          />
+          <input
+            type="number"
+            name="ladoTr2"
+            id="ladoTr2"
+            placeholder="Ingrese lado 02"
+          />
+          <input
+            type="number"
+            name="ladoTr3"
+            id="ladoTr3"
+            placeholder="Ingrese lado 03"
+          />
+          <button type="button" id="btn-perimetro">Perimetro</button>
+          <p>¿Cuanto mide base y altura de tu Triangulo?</p>
+          <input
+            type="number"
+            name="baseTr"
+            id="baseTr"
+            placeholder="Ingrese Base"
+          />
+          <input
+            type="number"
+            name="baseTr"
+            id="baseTr"
+            placeholder="Ingrese Altura"
+          />
+          <button type="button" id="btn-area">Area</button>
+        </div>
+
+        <div class="caja">
+          <h2>Circulo</h2>
+          <p>¿Cuanto mide el Radio de tu circulo?</p>
+          <input
+            type="number"
+            name="radioCir"
+            id="radioCir"
+            placeholder="Ingrese Radio"
+          />
+          <button type="button" id="btn-diametro">Diametro</button>
+          <button type="button" id="btn-perimetro">Perimetro</button>
+          <button type="button" id="btn-area">Area</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

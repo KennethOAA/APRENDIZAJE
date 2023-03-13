@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conectar PHP MYSQL</title>
+  </head>
+  <body style="text-align: center; margin: 100px">
+    <script>
+      const mysql = require("mysql");
+
+      const connection = mysql.createConnection({
+        host: "dbserver.cby5sl61nuzb.us-west-1.rds.amazonaws.com",
+        user: "admin",
+        password: "admin123",
+        database: "grupo3",
+      });
+
+      connection.connect((err) => {
+        if (err) {
+          console.error("Error de conexión: ", err);
+          return;
+        }
+        console.log("Conexión exitosa");
+      });
+
+      connection.end();
+    </script>
+  </body>
+</html>

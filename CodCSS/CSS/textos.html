@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Textos</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .mnav {
+        background-color: black;
+        padding: 20px 0;
+      }
+      .mnav-ul {
+        list-style: none;
+        padding-left: 80px;
+      }
+      .mnav-ul__items {
+        display: inline-block;
+        padding-left: 80px;
+      }
+      .mnav-ul__items a {
+        color: white;
+        text-decoration: none;
+      }
+      .mnav-ul__items a:hover {
+        color: aquamarine;
+        text-decoration: underline;
+      }
+      /*.mnav-ul__items a::after 
+        content: "|"*/
+      h1 {
+        color: blue;
+        text-align: center;
+        padding: 8px 0;
+      }
+      p {
+        text-align: justify;
+        text-transform: lowercase; /* lowercase */
+        font-size: 15px;
+        font-style: italic;
+        /* ESCALA DE NEGRILLA WEIGHT */
+        /*font-weight: 100;*/
+        font-weight: bold;
+        /* IDENTAR AL INICIO*/
+        text-indent: 22px;
+        /* GENERA ESPACIO ENTRA CADA LINEA */
+        line-height: 2;
+        /* SEPARA UN ESPACIO POR CADA PALABRA */
+        word-spacing: 5px;
+        /* SOMBRA PARA EL TEXTO */
+        /* RGBA EL COLOR DE LA SOMBRA EL ULTIMO VALOR DEL
+        RGB ES EL NIVEL DE SOMBRA (NEGRO  CON SOMBRA 0.3) */
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+      }
+      .enlace {
+        text-decoration: none;
+        text-transform: capitalize;
+        letter-spacing: 4px;
+      }
+      .enlace:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="mnav">
+        <ul class="mnav-ul">
+          <li class="mnav-ul__items"><a href="">Inicio</a></li>
+          <li class="mnav-ul__items"><a href="">Registro</a></li>
+          <li class="mnav-ul__items"><a href="">Quienes Somos?</a></li>
+          <li class="mnav-ul__items"><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>HOLA MUNDO</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+          est delectus odio ex incidunt adipisci exercitationem minus tenetur,
+          fugiat, iusto illo nemo, quas autem! Magnam, nisi tempore. Explicabo,
+          ratione sit!
+          <a class="enlace" href="">google</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

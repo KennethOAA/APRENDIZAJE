@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <form action="">
+      <label for="nombre">Nombre: </label>
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Ingrese nombre"
+      /><br /><br />
+
+      <label for="numero">Edad: </label>
+      <input
+        type="number"
+        name="numero"
+        id="numero"
+        placeholder="Ingrese edad"
+      /><br /><br />
+
+      <label for="correo">Correo: </label>
+      <input
+        type="email"
+        name="correo"
+        id="correo"
+        placeholder="Ingrese correo"
+      /><br /><br />
+
+      <label for="pass">Contraseña: </label>
+      <input
+        type="password"
+        name="pass"
+        id="pass"
+        placeholder="Ingrese contraseña"
+      /><br /><br />
+
+      <input type="submit" value="enviar" name="enviar" /><br /><br />
+
+      <!--USO DE VALUE CON READONLY SOLO LECTURA-->
+      <label for="pass1">Ingreso: </label>
+      <input
+        type="text"
+        name="pass1"
+        id="pass1"
+        value="KENNETH"
+        readonly
+      /><br /><br />
+
+      <!--DESABILITAR UN CAMPO-->
+      <label for="pass1">Ingreso: </label>
+      <input
+        type="text"
+        name="pass2"
+        id="pass2"
+        value="KENNETH"
+        disabled
+        size="100px"
+      /><br /><br />
+
+      <!--CAMPO REQUERIDO-->
+      <label for="pass4">Ingreso: </label>
+      <input type="text" name="pass3" id="pass3" required /><br /><br />
+
+      <!--AUTOFOCUS, EMPEZAR EN UNA CAJA RESPECTIVA-->
+      <!--DESABILITAR UN CAMPO-->
+      <label for="pass5">Ingreso: </label>
+      <input type="text" name="pass5" id="pass5" autofocus /><br /><br />
+    </form>
+  </body>
+</html>
