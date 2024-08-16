@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="franja_options">
+        <item>Segundos</item>
+        <item>Minutos</item>
+        <item>Horas</item>
+        <item>Dias</item>
+    </string-array>
+    <string name="app_name">APAGADO</string>
+</resources>
