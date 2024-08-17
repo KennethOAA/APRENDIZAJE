@@ -1,0 +1,6 @@
+SQL UTILIZADOS
+INSERT INTO usuario values(default,'koandrade','kennethandrad@gmail.com',SHA2('ken123A_.a', 256),'0')
+
+
+
+
