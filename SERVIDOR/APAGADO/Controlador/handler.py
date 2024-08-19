@@ -4,9 +4,11 @@ import os
 import subprocess
 import time
 
-PORT = 8088
-
 class CustomHandler(http.server.SimpleHTTPRequestHandler):
+    def __init__(self):
+        # Inicializa los atributos con valores predeterminados
+        hostux=""
+
     def do_GET(self):
         if self.path == '/':
             self.path = 'index.html'  
@@ -74,8 +76,3 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
         else:
             self.send_response(404)
             self.end_headers()
-
-# Configura el servidor
-with socketserver.TCPServer(("", PORT), CustomHandler) as httpd:
-    print(f"Sirviendo en el puerto {PORT}")
-    httpd.serve_forever()
